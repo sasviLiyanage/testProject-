@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>home page template</h1>
+<div>
+    <div>
+       {% for class in classes %}
+            <div>
+                <h5>{{class.id}} -- {{class.name}}</h5>
+            </div>
+       {% endfor %}
+        
+    </div>
+</div>
+
+{% endblock %}
